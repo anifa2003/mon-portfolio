@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navigation -->
+    <header class="bg-gray-800 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold">Mon Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#accueil" class="hover:text-blue-400">Accueil</a></li>
+                    <li><a href="#about" class="hover:text-blue-400">À propos</a></li>
+                    <li><a href="#skills" class="hover:text-blue-400">Compétences</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400">Projets</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Accueil -->
+    
+<section id="home" class="relative w-full h-screen bg-cover bg-center" style="background-image: url('Media/image_de_fond.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Superposition sombre pour améliorer la lisibilité -->
+    <div class="flex items-center justify-center h-full text-center text-white relative z-10">
+        <div>
+            <h1 class="text-4xl sm:text-5xl font-bold leading-tight">Bienvenue sur mon Portfolio</h1>
+            <p class="mt-4 text-lg">Je suis une développeuse passionnée par le web et les nouvelles technologies.</p>
+            <a href="#about" class="mt-6 inline-block py-2 px-6 bg-teal-500 text-white font-semibold rounded-lg shadow-lg hover:bg-teal-400">En savoir plus</a>
+        </div>
+    </div>
+</section>
+
+    
+    
+
+    <!-- À Propos -->
+<section id="about" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start">
+        <!-- Image -->
+        <div class="md:w-1/3 mb-6 md:mb-0">
+            <img src="Media/Profil.jpg" alt="Photo de profil" class="w-48 h-48 md:w-60 md:h-60 rounded-full mx-auto md:mx-0 shadow-lg">
+        </div>
+        <!-- Texte -->
+        <div class="md:w-2/3 text-center md:text-left md:pl-10">
+            <h2 class="text-3xl font-bold">À propos de moi</h2>
+            <p class="text-gray-400 mt-4"><p>Je suis une étudiante en informatique passionnée par le développement web et la programmation. Actuellement en deuxième année, je me spécialise dans le développement front-end et back-end, avec une forte motivation pour apprendre de nouvelles technologies.</p>
+            <p>Je suis curieuse et déterminée à acquérir de nouvelles compétences et à contribuer à des projets innovants. En dehors de l'informatique, j'aime relever des défis logiques et participer à des hackathons pour améliorer mes compétences techniques et collaboratives.</p></p>
+        </div>
+    </div>
+</section>
+
+    <!-- Compétences -->
+    <section id="skills" class="py-20 px-6 bg-gray-800">
+        <h2 class="text-3xl font-bold text-center">Mes Compétences</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8 max-w-4xl mx-auto text-center">
+            <div class="p-6 bg-gray-700 rounded-lg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-12 mx-auto">
+                <p class="mt-2">HTML</p>
+            </div>
+            <div class="p-6 bg-gray-700 rounded-lg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-12 mx-auto">
+                <p class="mt-2">CSS</p>
+            </div>
+            <div class="p-6 bg-gray-700 rounded-lg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-12 mx-auto">
+                <p class="mt-2">JavaScript</p>
+            </div>
+            <div class="p-6 bg-gray-700 rounded-lg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="h-12 mx-auto">
+                <p class="mt-2">Tailwind CSS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects" class="py-20 px-6 text-center">
+        <h2 class="text-3xl font-bold">Mes Projets</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 max-w-6xl mx-auto">
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <img src="Media/Application gestion de tache.jpg" class="rounded-md">
+                <h3 class="mt-4 text-xl font-bold">Projet 1</h3>
+                <p class="text-gray-400 mt-2">Le projet consiste à développer une application de gestion des tâches permettant de créer, organiser, suivre et accomplir des tâches quotidiennes. Elle inclura des fonctionnalités comme l’ajout de tâches, la gestion par catégories, des rappels, et la possibilité de partager des tâches pour une collaboration efficace. L’application sera simple, intuitive et accessible sur plusieurs plateformes.</p>
+                <a href="#" class="text-blue-400 mt-2 inline-block">Voir plus</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <img src="Media/Site e-commerce.jpg" class="rounded-md">
+                <h3 class="mt-4 text-xl font-bold">Projet 2</h3>
+                <p class="text-gray-400 mt-2">Le projet consiste à créer un site e-commerce permettant la vente de produits en ligne. Il inclura des fonctionnalités telles que la gestion de catalogues de produits, un système de paiement sécurisé, la gestion des commandes et des stocks, ainsi qu'un espace client pour suivre les achats. Le site sera conçu pour offrir une expérience utilisateur fluide, avec une interface responsive adaptée aux appareils mobiles.</p>
+                <a href="#" class="text-blue-400 mt-2 inline-block">Voir plus</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <img src="Media/OIP.jpg" class="rounded-md">
+                <h3 class="mt-4 text-xl font-bold">Projet 3</h3>
+                <p class="text-gray-400 mt-2">Le projet consiste à développer un jeu en Python, en utilisant des bibliothèques comme Pygame pour gérer l'interface graphique et la logique du jeu. Le jeu comprendra des éléments tels que des niveaux, des personnages, des interactions et des scores. L'objectif est de créer une expérience ludique et interactive, avec des mécaniques de jeu simples mais captivantes, tout en permettant une évolution progressive du gameplay.</p>
+                <a href="#" class="text-blue-400 mt-2 inline-block">Voir plus.</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 bg-gray-800 text-center">
+        <h2 class="text-3xl font-bold">Contactez-moi</h2>
+        <form class="mt-8 max-w-lg mx-auto">
+            <input type="text" placeholder="Votre Nom" class="w-full p-3 rounded bg-gray-700 text-white outline-none mb-4">
+            <input type="email" placeholder="Votre Email" class="w-full p-3 rounded bg-gray-700 text-white outline-none mb-4">
+            <textarea placeholder="Votre Message" class="w-full p-3 rounded bg-gray-700 text-white outline-none mb-4"></textarea>
+            <button class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg text-white">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- 🔗 Réseaux sociaux -->
+<div class="flex justify-center gap-6 mt-6">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/anifa-djitté-767" target="_blank" class="text-blue-600 text-3xl hover:text-blue-800">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/anifa2003" target="_blank" class="text-gray-800 text-3xl hover:text-gray-600">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/anysy82" target="_blank" class="text-blue-400 text-3xl hover:text-blue-600">
+        <i class="fab fa-twitter"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/any__issa" target="_blank" class="text-pink-500 text-3xl hover:text-pink-700">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-900">
+        <p class="text-gray-500">&copy; 2025 [Anifa Djitté]. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
